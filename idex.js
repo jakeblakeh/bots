@@ -51,16 +51,11 @@ Client.on("message", async (message) => {
 		.setTitle("Command List:")
 		.addField("!help", "Will give the current command list")
 		.addField("!ping", "WIll show the ping time for the bot")
-		.addField("!say [text]", "Will make the bot say something")
-                                .addField("!creator", "Will show creator of bot")
+		.addField("!say [text]", "Will make the bot say something
 		message.channel.send({embed})
 	}
 
-	if (command == "creator") {
-		const embed = new Discord.RichEmbed()
-		.setColor(0x954D23)
-		.setTitle("Bot Creator:"), "Dollars_#5032")
-		message.channel.send({embed})
+
 	}
 
 
